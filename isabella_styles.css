@@ -1,0 +1,111 @@
+/*my three values = passion, caring, community
+#E3645E == the burnt red
+
+
+/* Global styles
+------------------------------------*/
+
+body {
+  background-color: #fff8ee
+}
+html {
+    box-sizing: border-box;
+    /* background: #EEE; */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*HEADER STUFF*/
+
+header {
+  background:
+  radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent),
+  radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,.3) 21%, rgba(255,255,255,.3) 34%, transparent 35%, transparent) 0 -50px;
+  background-color: #ffe6c0;
+  background-size:75px 100px;
+}
+
+.header {
+  max-width: 800px;
+  width: 85%;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+  color: #E3645E;
+}
+.header > h1, h2 {
+  line-height: 5%
+}
+.header > p {
+  line-height: 1
+}
+h1 {
+  font-family: 'Nanum Pen Script';
+  font-weight: 500;
+  font-style: oblique;
+  font-size: 100px
+}
+h2 {
+  font-family: 'Nanum Pen Script';
+  font-weight: 300;
+  font-style: italic;
+  font-size: 40px
+}
+.header p {
+font-family: 'Nanum Pen Script';
+font-weight: 500;
+font-size: 30px
+}
+.header ul {
+font-family: 'Nanum Pen Script';
+font-weight: 500;
+font-size: 25px;
+text-align: center;
+word-spacing: 10px;
+}
+ul li{
+  display: inline-block;
+}
+
+/*edu*/
+.section p {
+margin-top: 0px;
+font-family: 'Baloo Bhaina 2';
+font-weight: 400;
+font-size: 20px;
+line-height: 1;
+}
+
+/*personal projects*/
+h3 {
+font-family: 'Baloo Bhaina 2';
+font-weight: 800;
+font-style: extra-bold;
+font-size: 35px;
+margin-bottom: 0px;
+}
+
+.personal_projects p {
+  margin-top: 0px;
+  font-family: 'Baloo Bhaina 2';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+
+}
+table {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  table-layout: auto;
+  width: 800px;
+  font-family: 'Baloo Bhaina 2'
+}
+
+th {
+  font-family: 'Baloo Bhaina 2'
+  text-align: center;
+  font-weight: 800;
+  font-size: 25px;
+}
