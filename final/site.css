@@ -1,0 +1,88 @@
+/* COLORS
+banner pink: #f9bfbb
+banner orange: #eca108
+title txt color: #370101
+navi txt color: #6C2A2A
+hover txt color: #A74949
+
+FONTS
+headers = font-family: 'Nunito Sans', sans-serif;
+body = font-family: lato 
+
+*/
+body * {
+   width: 100%;
+   box-sizing: border-box;
+}
+body {
+   margin: 0;
+}
+
+.container {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: .05fr .1fr 1fr 1fr;
+   grid-template-areas:
+      "a b "
+      "c c "
+      "d d "
+      "d d ";
+   min-height: 100vh;
+   background-color: #f9bfbb;
+}
+
+.logo {
+  grid-area: a;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  grid-area: b;
+  background-color: #f9bfbb;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 50px;
+  font-weight: 900px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.navi {
+  grid-area: c;
+  background-color: #f9bfbb;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 25px;
+  color: #370101;
+  text-align: center;
+  word-spacing: 100px;
+  padding-bottom: 15px;
+
+}
+
+.content {
+  grid-area: d;
+  background-color: white;
+}
+
+a:hover {
+  color: #A74949;
+}
+
+.navi a:link  {
+  text-decoration: none;
+  color: #6C2A2A;
+}
+.navi a:visited {
+  text-decoration: none;
+  color: #6C2A2A;
+}
+
+.header a:link {
+  text-decoration: none;
+  color: #370101;
+}
+.header a:visited {
+  text-decoration: none;
+  color: #370101;
+}
+/*media query!!*/

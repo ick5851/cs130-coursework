@@ -1,0 +1,62 @@
+.points {
+font-family: 'Lato', sans-serif;
+font-size: 22px;
+}
+/*will change alignment?*/
+.page_title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 25px;
+  text-align: left;
+  margin-left: 10px;
+  padding-top: 30px;
+}
+
+.timeline {
+  position:relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/*the actual line*/
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 7px;
+  background-color: orange;
+  top: 0;
+  bottom: 0;
+  margin-left: 10px;
+
+}
+
+/* class holding the informational text */
+.point {
+  padding: 30px 40px;
+  position: relative;
+  background-color: yellow;
+  margin-left: 10px;
+}
+/* The circles on the timeline */
+.point::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -8px;
+  background-color: pink;
+  top: 20px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.info {
+  text-align: right;
+  padding-right: 100px;
+}
+
+/*when you click, one point becomes the main focus*/
+.selected {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
