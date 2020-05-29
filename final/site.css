@@ -7,7 +7,7 @@ hover txt color: #A74949
 
 FONTS
 headers = font-family: 'Nunito Sans', sans-serif;
-body = font-family: lato 
+body = font-family: lato
 
 */
 body * {
@@ -21,7 +21,7 @@ body {
 .container {
    display: grid;
    grid-template-columns: 1fr 1fr;
-   grid-template-rows: .05fr .1fr 1fr 1fr;
+   grid-template-rows: .5fr .1fr 1fr 1fr;
    grid-template-areas:
       "a b "
       "c c "
@@ -60,7 +60,7 @@ body {
 }
 
 .content {
-  grid-area: d;
+  grid-area: d ;
   background-color: white;
 }
 
@@ -68,21 +68,14 @@ a:hover {
   color: #A74949;
 }
 
-.navi a:link  {
-  text-decoration: none;
-  color: #6C2A2A;
-}
-.navi a:visited {
+.navi a:link, .navi a:visited  {
   text-decoration: none;
   color: #6C2A2A;
 }
 
-.header a:link {
+.header a:link , .header a:visited {
   text-decoration: none;
   color: #370101;
 }
-.header a:visited {
-  text-decoration: none;
-  color: #370101;
-}
+
 /*media query!!*/
