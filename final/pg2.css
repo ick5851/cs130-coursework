@@ -1,49 +1,160 @@
-.points {
-font-family: 'Lato', sans-serif;
-font-size: 22px;
-padding: 20px;
-}
-
-
-.content{
-  display: grid;
-  grid-template-columns: .6fr 1fr;
-  grid-template-rows: .1fr auto;
-  grid-template-areas:
-    " g g "
-     "e f ";
-  min-height: 100vh;
-}
-/*will change alignment?*/
-.page_title {
-  grid-area: g;
+h1 {
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 25px;
+  font-size: 35px;
   text-align: left;
   margin-left: 30px;
   padding-top: 30px;
 }
 
 
-.timeline {
-  grid-area: e;
+* {
+	margin: 0;
+	padding: 0;
 }
 
-/*the actual line*/
-.timeline::after {
-  content: '';
+
+a {
+  color: #eca108;
+  text-decoration: none;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+
+a:hover, a.selected {
+		color: #6C2A2A;
+	}
+
+/* h1,h2,h4,h5,h6 {
+	text-align: center;
+	color: #ccc;
+	margin-bottom: 5px;
+}
+	h1 {
+		font-size: 18px;
+	}
+	h2 {
+		font-size: 14px;
+	} */
+/* .sociales {
+	text-align: center;
+	margin-bottom: 20px;
+} */
+
+#timeline {
+	width: 100%;
+	height: 800px;
+	overflow: hidden;
+  margin-left: 30px;
+	position: relative;
+  background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/dot.gif') 3px top repeat-y;
+}
+
+#dates {
+	width: 40%;
+	height: 600px;
+	overflow: hidden;
+	float: left;
+  /* background-color: black; */
+  /* margin-left: 20px; */
+}
+
+#dates li {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 25px;
+	list-style: none;
+	/* height: 50px; */
+	line-height: 70px;
+	padding-left: 30px;
+	background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/biggerdot.png') left center no-repeat;
+}
+
+#dates .selected {
+font-size: 27px;
+}
+
+#issues {
+	width: 50%;
+	height: 300px;
+	overflow: hidden;
+	float: center;
+	background-color: pink;
+}
+
+#issues li {
+	/* max-width: 300px; */
+	/* width: 100%; */
+	height: 300px;
+	list-style: none;
+	text-align: center;
+  padding-top: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#issues li img {
+// float: left;
+width: 200px; // add
+margin: 10px 30px 10px 50px;
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);/* IE 6 & 7 */
+zoom: 1;
+-webkit-transition: all 2s ease-in-out;
+-moz-transition: all 2s ease-in-out;
+-o-transition: all 2s ease-in-out;
+-ms-transition: all 2s ease-in-out;
+transition: all 2s ease-in-out;
+-webkit-transform: scale(0.7,0.7);
+-moz-transform: scale(0.7,0.7);
+-o-transform: scale(0.7,0.7);
+-ms-transform: scale(0.7,0.7);
+transform: scale(0.7,0.7);
+}
+
+#issues li h2 {
+	color: #6C2A2A;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 48px;
+	text-align: center;
+}
+
+#issues li p {
+  margin-top: 15px;
+  color: #A74949;
+  font-family: 'Lato', sans-serif;
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 35px;
+}
+
+#next, #prev {
   position: absolute;
-  width: 7px;
-  background-color: orange;
-  top: 0;
-  bottom: 0;
-  margin-left: 10px;
-
+  left: 45%; // left: 55%;
+  font-size: 70px;
+  width: 38px;
+  height: 22px;
+  background-position: 0 -44px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
 }
 
+#next:hover, #prev:hover {
+  background-position:  0 0;
+}
 
-/*when you click, one point becomes the main focus*/
-.selected {
-  grid-area: f;
-  /* background: green; */ // to see it better 
+#next {
+  bottom: 0;
+  background-image: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/next_v.png');
+}
+
+#prev {
+  top: 0;
+  background-image: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/prev_v.png');
+}
+
+#next.disabled, #prev.disabled {
+  opacity: 0.2;
 }
