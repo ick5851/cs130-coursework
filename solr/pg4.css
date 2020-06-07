@@ -1,0 +1,145 @@
+body * {
+   width: 100%;
+   box-sizing: border-box;
+}
+.container {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 300px 50px 1fr 1fr;
+   grid-template-areas:
+      "a b "
+      "c c "
+      "d d "
+      "d d ";
+   min-height: 100vh;
+   background-color: #f9bfbb;
+}
+
+.header {
+  border-style: solid;
+  border-color: white;
+}
+
+.logo {
+  border-style: solid;
+  border-color: white;
+}
+.navi {
+  border-style: solid;
+  border-color: black;
+  /* margin-bottom: 10px; */
+}
+.content h2 {
+  font-family: 'Nunito Sans', sans-serif;
+	font-size: 35px;
+  text-align: center;
+  margin-top: 50px;
+  color: #370101;
+
+  /* padding-left: 20px; */
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.platform h2 {
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+  color: #370101;
+}
+
+a:visited {
+  color: #370101;
+}
+
+.content a:hover {
+  color: #A74949;
+}
+
+
+/*media queries*/
+
+/* @media (max-width: 1540px) {
+  .logo {
+    background-size: 800px;
+    background-repeat: no-repeat;
+  }
+  .header {
+    font-size: 40px;
+  }
+
+@media (max-width: 1520px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: .6fr .1fr .1fr 1fr;
+    grid-template-areas:
+       "a"
+       "b"
+       "c"
+       "d" ;
+  }
+  .logo {
+    background-position: center;
+  }
+
+  .header {
+    text-align: center;
+    line-height: 10px;
+    margin-bottom: 5px;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header {
+    line-height: 80px;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  .logo {
+    background-size: 750px 270px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 995px) {
+  .header {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+} */
+
+/*phone*/
+/* @media (max-width: 768px) {
+  .logo {
+  background-size: 450px 170px;
+  margin-top: 2px;
+  }
+  .header {
+    margin-top: -15px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 25px;
+    line-height: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+  }
+  .navi {
+    margin-top: -15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+
+  }
+  .container {
+    grid-template-rows: 130px 140px 20px 1fr;
+  }
+
+} */

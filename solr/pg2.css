@@ -1,20 +1,10 @@
-h1 {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 35px;
-  text-align: left;
-  margin-left: 30px;
-  padding-top: 30px;
-}
-
-
 * {
-	margin: 0;
 	padding: 0;
 }
 
 
 a {
-  color: #eca108;
+  color: #e0827b;
   text-decoration: none;
 	-webkit-transition: 0.5s;
 	-moz-transition: 0.5s;
@@ -23,21 +13,15 @@ a {
 	transition: 0.5s;
 }
 
-a:hover, a.selected {
-		color: #6C2A2A;
+ a.selected {
+		color: #A74949;
 	}
 
-/* h1,h2,h4,h5,h6 {
-	text-align: center;
-	color: #ccc;
-	margin-bottom: 5px;
+a:hover {
+	color: #A74949;
+
 }
-	h1 {
-		font-size: 18px;
-	}
-	h2 {
-		font-size: 14px;
-	} */
+
 /* .sociales {
 	text-align: center;
 	margin-bottom: 20px;
@@ -80,13 +64,13 @@ font-size: 27px;
 	height: 300px;
 	overflow: hidden;
 	float: center;
-	background-color: pink;
+	/* background-color: pink; */
 }
 
 #issues li {
 	/* max-width: 300px; */
 	/* width: 100%; */
-	height: 300px;
+	/* height: 300px; */
 	list-style: none;
 	text-align: center;
   padding-top: 60px;
